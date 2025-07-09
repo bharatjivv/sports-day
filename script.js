@@ -1,6 +1,6 @@
 console.log('sports day')
 
-// Initialize score object
+// Initialize 
 let score = {
   red: 0,
   blue: 0,
@@ -31,7 +31,6 @@ function Race100M(callback) {
 
     console.log("Race times:", times);
 
-    // Sort based on time
     const sorted = Object.entries(times).sort((a, b) => a[1] - b[1]);
 
     // Award points
@@ -44,7 +43,7 @@ function Race100M(callback) {
   }, 3000);
 }
 
-// Long Jump Simulation
+// Long Jump 
 function LongJump(callback) {
   console.log("Starting the Long Jump event...");
   setTimeout(() => {
@@ -59,7 +58,7 @@ function LongJump(callback) {
   }, 2000);
 }
 
-// High Jump with user input
+// High Jump and user input
 function HighJump(callback) {
   console.log("Starting the High Jump...");
   const userInput = prompt("Which color secured the highest jump? (red/blue/green/yellow)");
@@ -81,11 +80,11 @@ function AwardCeremony() {
   console.log("Final Scores:", score);
   const sorted = Object.entries(score).sort((a, b) => b[1] - a[1]);
 
-  console.log("🏅 Award Ceremony 🏅");
+  console.log("Award Ceremony ");
   if (sorted[0]) console.log(`1st Place: ${sorted[0][0]} with ${sorted[0][1]} points`);
   if (sorted[1]) console.log(`2nd Place: ${sorted[1][0]} with ${sorted[1][1]} points`);
   if (sorted[2]) console.log(`3rd Place: ${sorted[2][0]} with ${sorted[2][1]} points`);
 }
 
-// Start the event
+// Start of event
 OpeningCeremony(Race100M);
